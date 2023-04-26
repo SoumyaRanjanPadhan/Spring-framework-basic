@@ -8,12 +8,12 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages="com.code.springconfig")
 public class javaconfig {
 	   @Bean
-	   public Samosa getSamosa() {
-		   return new Samosa();
+	   public Srp getSrp() {
+		   return new Srp();
 	   }
      @Bean 
 	public Student getStudent() {
-		Student student=new Student(getSamosa());
+		Student student=new Student(getSrp());
 		return student;
 	}
 }
