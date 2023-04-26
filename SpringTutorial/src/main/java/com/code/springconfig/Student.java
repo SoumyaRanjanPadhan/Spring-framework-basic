@@ -5,23 +5,23 @@ import org.springframework.stereotype.Component;
 //@Component
 public class Student {
 	
-	private Samosa samosa;
+	private Srp srp;
 
-	public Samosa getSamosa() {
-		return samosa;
+	public Srp getSrp() {
+		return srp;
 	}
 
-	public void setSamosa(Samosa samosa) {
-		this.samosa = samosa;
+	public void setSrp(Srp srp) {
+		this.srp = srp;
 	}
 
-	public Student(Samosa samosa) {
+	public Student(Srp srp) {
 		super();
-		this.samosa = samosa;
+		this.srp = srp;
 	}
 
 	public void study() {
-		this.samosa.display();
+		this.srp.display();
 		System.out.println("student is reading...");
 	}
 }
