@@ -1,6 +1,6 @@
 package com.code.springconfig;
 
-public class Samosa {
+public class Srp {
 	
 	public void display() {
 		System.out.println("price is high!");
