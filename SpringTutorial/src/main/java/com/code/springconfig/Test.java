@@ -13,8 +13,8 @@ public class Test {
 		Student st=con.getBean("getStudent",Student.class);
 		System.out.println(st);
 		st.study();
-		Samosa sam=con.getBean("getSamosa",Samosa.class);
-		System.out.println(sam);
+		Srp srp=con.getBean("getSrp",Srp.class);
+		System.out.println(srp);
 	}
 
 }
