@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- setter injection -->
+
+	<bean class="com.code.CollectionDependencyInjection.Emp" name="emp">
+	<property name="name" value="Soumya"/>
+	<property name="phones">
+	<list>
+	  <value>6370018826</value>
+	  <value>7751870079</value>
+	</list>
+	</property>
+	<property name="addresses">
+	<set>
+	  <value>Delhi</value>
+	  <value>bbsr</value>
+	</set>
+	</property>
+	<property name="courses">
+	<map>
+	  <entry key="java" value="3mnth"/>
+	  <entry key="python" value="2mnth"/>
+	</map>
+	</property>
+	  <property name="props">
+	   <props>
+	     <prop key="name">ranjan</prop>
+	   </props>
+	  </property>
+	</bean>
+</beans>

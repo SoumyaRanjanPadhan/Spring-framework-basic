@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd
+ http://www.springframework.org/schema/util
+ http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<!-- stand alone collection -->
+	<util:list list-class="java.util.LinkedList" id="myFrnds">
+	     <value>ankit</value>
+	     <value>aman</value>
+	     <value>amit</value>
+	</util:list>
+	
+	<util:map map-class="java.util.HashMap" id="fees">
+	    <entry key="python" value="6000"/>
+	    <entry key="java" value="10000"/>
+	    <entry key="spring" value="3000"/>
+	</util:map>
+	<bean class="com.code.StandaloneCollections.person" name="per1">
+	   <property name="frnds" ref="myFrnds"/>
+	   <property name="fee" ref="fees"></property>  
+	</bean>
+	
+	
+</beans>
