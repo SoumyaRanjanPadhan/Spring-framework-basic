@@ -11,7 +11,7 @@
 	<!-- setter injection -->
     <context:annotation-config/>
 	<bean class="com.code.autowired.Automatic.Address" name="address">
-      <property name="street" value="maharishi"/>
+      <property name="street" value="janpath"/>
       <property name="city" value="bbsr" />
 	</bean>
 	<bean class="com.code.autowired.Automatic.Emp" name="emp"/>
