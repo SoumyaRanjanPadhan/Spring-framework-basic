@@ -1,5 +1,5 @@
 # Spring-framework
-* These are the basic concept of spring including
+* These are the basic concepts of spring including
   - Dependency Injection
   - Autowired
   - Spring JDBC
